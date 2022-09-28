@@ -160,7 +160,7 @@ Good Luck for your journey
 <br><br>
 
 <div align="center">
-© 2021 Shruti Mishra </div>
+© 2021 Shruti Mishra & Md Nazish Arman </div>
 <!-- CONTENT OF PROJECT -->
 
 
