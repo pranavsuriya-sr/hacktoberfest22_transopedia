@@ -1,172 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Employment support | Transopedia</title>
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-         <!-- Favicons -->
-  <link rel="shortcut icon" href="translogo.jpeg" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Employment support | Transopedia</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="translogo.jpeg" type="image/png" />
 
-        <style>
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-            body{
-                /* font-family: sans-serif; */
-                font-family: 'Poppins', sans-serif;
-                background:linear-gradient(0deg, #43cea2 , #185a9d 100%);
-                height: 100vh;
-            }
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
-            .badge-notify{
-                background: red;
-                position: relative;
-                top: -20px;
-                right: 40px;
-                font-family: sans-serif;
-            }
-            p{
-                font-size: 30px;
-                margin-top: 18px;
-                font-family:'Times New Roman', Times, serif;
-                /* color: rgb(57, 25, 100); */
-                color: white;
-            }
-/* button green */
-            #addNewProduct{
-                background: transparent;
-                border: 2px solid white;
-                padding: 10px 15px;
-                color: white;
-                border-radius: 50px;
-                margin-top: 30px;
-                background-color: #43cea2;
-                /* background-color: #185a9d; */
-                /* position: relative;
-                display: inline-block;
-                align-items: center;
-                justify-content: center; */
-            }
-            #addNewProduct a{
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(90deg, #43cea2, #185a9d);
+        height: 100vh;
+      }
 
-                color: white;
-            }
-            
-button :hover{
-    /* background-color: #185a9d; */
-    background-color: #43cea2;
-    padding: 10px 15px;
-    border-radius: 50px;
-    width: 50px;
-}
-            #addNewProduct a:hover{
-                    text-decoration: none;
-                    /* color: white; */
-                    /* background-color: #185a9d; */
-                    background-color: #43cea2;
-                    /* color: rgb(10, 0, 0); */
-                 border-radius: 50px;
-            }
-                .btn{
-                    padding: 10px 20px;
-                    background: transparent;
-                    border: 2px solid white;
+      .badge-notify {
+        background: red;
+        position: relative;
+        top: -20px;
+        right: 40px;
+        font-family: sans-serif;
+      }
 
-                }
+      h1 p {
+        font-size: 36px;
+        font-weight: 700;
+        margin-top: 18px;
+        color: white;
+        text-align: left;
+      }
 
-                .btn-info{
-                    background: #34495e;
-                    padding: 10px 20px;
-                    border-top-right-radius: 50px;
-                    border-bottom-right-radius: 50px;
-                }
+      #addNewProduct {
+        border: 0;
+        background: none;
+        padding: 0;
+        margin-right: 58.5rem;
+        font-size: medium;
+      }
 
-                .row{
-                    color: white;
-                }
+      #addNewProduct a {
+        border: 2px solid white;
+        padding: 4px 7px;
+        border-radius: 50px;
+        color: white;
+      }
 
-                .h1{
-                    color: white;
-                    /* margin-top: 20px; */
-                }
-        
-                .btn-danger{
-                    border-top-left-radius: 50px;
-                    border-bottom-left-radius: 50px;
-                }
-        </style>
-        </head>
-        <body>
-            <center>
-            <div class="container">
-                <br><br>
-                
-                <h1>
-                    
-                   <p> PRODUCTS MADE BY THE COMMUNITY</p>
-                    <div style="float: right; cursor: pointer;">
-                    <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
-                    <span class="badge badge-notify my-cart-badge"></span>
-                </span>
-                    </div>
-                
-                </h1>
-                <button type="addNewProduct" id="addNewProduct">
-                    
-                    <a href="#" >ADD NEW PRODUCT</a>
-                </button>
-                <br><br><br>
-                <div class="row">
-                    <div class="col-md-3 text-center">
-                        <img src="../assets/img/img1.jpeg" width="270" height="270" alt="">
-                        <br></br>
-                        PRODUCT 1 (single product) - <strong>RS 350</strong>
-                        <br></br>
-                        <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="">
-                            ADD TO CART
-                        </button>
-                        <a href="" class="btn btn-info">details</a>
-                    </div>
+      #addNewProduct a:hover {
+        background-color: #1c19dd;
+        color: white;
+        text-decoration: none;
+      }
 
-                    <div class="col-md-3 text-center">
-                        <img src="../assets/img/img2.jpeg" width="270" height="270" alt="">
-                        <br></br>
-                        PRODUCT 2 (single product) - <strong>RS 50</strong>
-                        <br></br>
-                        <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="20" data-quantity="1" data-image="">
-                            ADD TO CART
-                        </button>
-                        <a href="" class="btn btn-info">details</a>
-                    </div>
+      .btn {
+        padding: 10px 20px;
+        margin-bottom: 4px;
+        background: transparent;
+        border: 2px solid white;
+      }
 
-                    <div class="col-md-3 text-center">
-                        <img src="../assets/img/img3.jpeg" width="270" height="270" alt="">
-                        <br></br>
-                        PRODUCT 3 (single product) - <strong>RS 450</strong>
-                        <br></br>
-                        <button class="btn btn-danger my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="30" data-quantity="1" data-image="">
-                            ADD TO CART
-                        </button>
-                        <a href="" class="btn btn-info">details</a>
-                    </div>
+      .section-title {
+        text-align: left;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0;
+        line-height: 1px;
+        margin: 0 0 5px 0;
+        letter-spacing: 2px;
+        color: white;
+      }
 
-                    <div class="col-md-3 text-center">
-                        <img src="../assets/img/img4.jpeg" width="270" height="270" alt="">
-                        <br></br>
-                        PRODUCT 4 (single product) - <strong>RS 650</strong>
-                        <br></br>
-                        <button class="btn btn-danger my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="40" data-quantity="1" data-image="">
-                            ADD TO CART
-                        </button>
-                        <a href="" class="btn btn-info">details</a>
-                    </div>
+      .section-title::after {
+        content: "";
+        width: 120px;
+        height: 1px;
+        display: inline-block;
+        background: white;
+        margin: 4px 10px;
+      }
 
-                </div>
-           
+      .my-cart-btn {
+        color: #1c19dd;
+        border: solid 2px #1c19dd;
+        background-color: white;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+      }
+
+      .my-cart-btn:hover {
+        color: white;
+        border: solid 2px #1c19dd;
+        background-color: #1c19dd;
+      }
+
+      .btn-info {
+        background: #185a9d;
+        color: white;
+        padding: 10px 20px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+
+      .btn-info:hover {
+        color: #185a9d;
+        border: solid 2px #185a9d;
+        background-color: white;
+      }
+
+      .card:hover {
+        box-shadow: 0 0 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <div class="container">
+        <br /><br />
+
+        <h1>
+          <div class="section-title">SERVICES</div>
+
+          <p>PRODUCTS MADE BY THE COMMUNITY</p>
+
+          <div style="float: right; cursor: pointer">
+            <span class="glyphicon glyphicon-shopping-cart my-cart-icon">
+              <span class="badge badge-notify my-cart-badge"></span>
+            </span>
+          </div>
+        </h1>
+
+        <button type="addNewProduct" id="addNewProduct">
+          <a href="#">ADD NEW PRODUCT</a>
+        </button>
+
+        <br /><br /><br />
+
+        <div class="container d-flex flex-wrap justify-content-center">
+          <div class="card m-4 p-2" style="width: 19rem">
+            <img
+              src="../assets/img/img1.jpeg"
+              class="card-img-top"
+              height="300"
+              alt="here comes an image"
+            />
+            <div class="card-body d-flex justify-content-between">
+              <h5 class="card-title">PRODUCT 1</h5>
+              <strong>RS 350</strong>
             </div>
-        </center>
-            <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-        <script src="..//jquery.mycart.js"></script>
-        <script src="..//img & plugin/cart.js"></script>
-        
-        </body>
+            <button
+              class="btn my-cart-btn"
+              data-id="2"
+              data-name="product 2"
+              data-summary="summary 2"
+              data-price="20"
+              data-quantity="1"
+              data-image=""
+            >
+              ADD TO CART
+            </button>
+            <a href="#" class="btn btn-info">DETAILS</a>
+          </div>
+          <div class="card m-4 p-2" style="width: 19rem">
+            <img
+              src="../assets/img/img2.jpeg"
+              class="card-img-top"
+              height="300"
+              alt="here comes an image"
+            />
+            <div class="card-body d-flex justify-content-between">
+              <h5 class="card-title">PRODUCT 2</h5>
+              <strong>RS 50</strong>
+            </div>
+            <button
+              class="btn my-cart-btn"
+              data-id="2"
+              data-name="product 2"
+              data-summary="summary 2"
+              data-price="20"
+              data-quantity="1"
+              data-image=""
+            >
+              ADD TO CART
+            </button>
+            <a href="#" class="btn btn-info">DETAILS</a>
+          </div>
+
+          <div class="card m-4 p-2" style="width: 19rem">
+            <img
+              src="../assets/img/img3.jpeg"
+              class="card-img-top"
+              height="300"
+              alt="here comes an image"
+            />
+            <div class="card-body d-flex justify-content-between">
+              <h5 class="card-title">PRODUCT 3</h5>
+              <strong>RS 450</strong>
+            </div>
+            <button
+              class="btn my-cart-btn"
+              data-id="2"
+              data-name="product 2"
+              data-summary="summary 2"
+              data-price="20"
+              data-quantity="1"
+              data-image=""
+            >
+              ADD TO CART
+            </button>
+            <a href="#" class="btn btn-info">DETAILS</a>
+          </div>
+
+          <div class="card m-4 p-2" style="width: 19rem">
+            <img
+              src="../assets/img/img4.jpeg"
+              class="card-img-top"
+              height="300"
+              alt="here comes an image"
+            />
+            <div class="card-body d-flex justify-content-between">
+              <h5 class="card-title">PRODUCT 4</h5>
+              <strong>RS 650</strong>
+            </div>
+            <button
+              class="btn my-cart-btn"
+              data-id="2"
+              data-name="product 2"
+              data-summary="summary 2"
+              data-price="20"
+              data-quantity="1"
+              data-image=""
+            >
+              ADD TO CART
+            </button>
+            <a href="#" class="btn btn-info">DETAILS</a>
+          </div>
+
+          <div class="card m-4 p-2" style="width: 19rem">
+            <img
+              src=""
+              class="card-img-top"
+              height="300"
+              alt="Here comes an image"
+            />
+            <div class="card-body d-flex justify-content-between">
+              <h5 class="card-title">PRODUCT 5</h5>
+              <strong>RS 950</strong>
+            </div>
+            <button
+              class="btn my-cart-btn"
+              data-id="2"
+              data-name="product 2"
+              data-summary="summary 2"
+              data-price="20"
+              data-quantity="1"
+              data-image=""
+            >
+              ADD TO CART
+            </button>
+            <a href="#" class="btn btn-info">DETAILS</a>
+          </div>
+        </div>
+      </div>
+    </center>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="..//jquery.mycart.js"></script>
+    <script src="..//img & plugin/cart.js"></script>
+  </body>
 </html>
