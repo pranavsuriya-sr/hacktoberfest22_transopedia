@@ -6,6 +6,8 @@
 
 .img-container{
 	border: 0px solid red;
+    flex-basis: 50%;
+    
 }
 .outer-container{
 	position: absolute;
@@ -15,9 +17,11 @@
 	transform: translateX(-50%);
 	top: 100px;
 	padding: 20px;
-	border-radius: 15px;
+	border-radius: 35px;
 	justify-content: space-evenly;
-
+    max-width: 750px;
+    max-height: 850px;
+    
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -45,6 +49,9 @@
   	display: flex;
   	flex-direction: column;
 	border: 0px solid red;
+    padding-right: 20px;
+    flex-basis: 50%;
+    
 
 }
 .container:hover{
@@ -60,6 +67,11 @@
 	border-radius: 5px;
 	margin-bottom: 10px;
 	/* outline: none; */
+}
+.form-container input[type="text"]{
+    
+    outline: none;
+    display: flex;
 }
 .donation-input:active, .donation-input:focus{
 	border: none;
@@ -153,7 +165,7 @@ a:hover{
 
 .outer{
     position: fixed;
-   /* background:linear-gradient(
+    /*background:linear-gradient(
     0deg, #1488CC, #2B32B2 100%);*/
     background: linear-gradient(0deg, #43cea2 0%, #185a9d 100%);
 
@@ -164,4 +176,56 @@ a:hover{
     height: 100%;
     width: 100%;
     z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+    .img-container{
+    position: relative;
+    width: 100%;
+    max-height: auto;
+    top: 0px;
+    left: 0%;
+    display: none;
+    flex-direction: column;
+    stroke-width: 30%;
+    
+    
+
+    }
+    .img-container img{
+        max-width: 100%;
+        height: auto;
+
+    }
+    .outer-container{
+        height: 500px;
+        width: 600px;
+        box-sizing: border-box;
+        
+        
+    }
+    .form-container{
+        width: 100%;
+        padding: 65px 4%;
+        
+        flex-direction: column;
+        border-radius: 20%;
+        /*background-image: url('donate3D.png');
+        background-repeat: no-repeat;
+        background-size: 70% 50%;*/
+        backface-visibility: visible;
+        
+        
+    }
+    .form-container .donation-input{
+        border-radius: 5px;
+        
+    }
+    .outer-container .form-container h1 {
+        font-size: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    body{
+		overflow-x: hidden;
+	}
 }
