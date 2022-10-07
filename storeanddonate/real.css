@@ -20,6 +20,7 @@
 
 	display: flex;
 	flex-direction: row;
+    flex-wrap: wrap;
 	align-items: center;
 }
 .form-container{
@@ -46,12 +47,6 @@
   	flex-direction: column;
 	border: 0px solid red;
 
-}
-.container:hover{
-    /* transition: 0.1s;
-    transition: rotateY(0deg);
-    border: 2px solid white; */
-    /* border:2px solid #185a9d; */
 }
 .donation-input{
 	background-color: rgba(255, 255, 255, 0.5);
