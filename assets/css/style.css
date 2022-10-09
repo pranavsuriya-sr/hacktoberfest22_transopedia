@@ -18,7 +18,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
-  
+
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled {
   background: rgb(228 230 242 / 90%);
+  color: #1d2768
 }
 
 #header .logo h1 {
@@ -118,13 +119,17 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   font-weight: bolder;
   position: relative;
-  color:#1d2768;
+  color:#FFF;
   padding: 7px 15px 7px 15px;
   margin-left: 5px;
   transition: 0.3s;
   font-size: 14px;
   border-radius: 50px;
   font-family: "Open Sans", sans-serif;
+}
+
+.header-scrolled .nav-menu a {
+  color: #1d2768;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -153,6 +158,10 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle i {
   color: #fff;
 }
+.mobile-nav-toggle.toggle-scrolled i {
+  color: #1d2768;
+}
+
 
 .mobile-nav {
   position: fixed;
@@ -248,10 +257,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, #43cea2 0%, #185a9d 100%);
+  background: linear-gradient(0deg, #43cea2 10%, #185a9d 70%);
   padding: 0;
 }
- 
+
 #hero .carousel-container  {
   display: flex;
   justify-content: center;
@@ -264,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  color: #26298b;
+  color: #D3F7F2;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
@@ -275,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 50px auto;
-  color: #292da0;
+  color: #D3F7F2;
 }
 
 #hero .carousel-control-prev, #hero .carousel-control-next  {
@@ -301,20 +310,20 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   line-height: 1;
   margin: 10px;
-  color: #052ffc;
+  color: #1d2768;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #052ffc;
+  border: 2px solid #1d2768;
 }
 
 #hero .btn-get-started:hover {
-  background: #052ffc;
+  background: #1d2768;
   color: #fff;
   text-decoration: none;
 }
 
 @media (min-width: 1024px) {
- 
+
   #hero p {
     width: 60%;
   }
@@ -324,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  
+
   #hero .carousel-container {
     height: 90vh;
   }
@@ -642,7 +651,7 @@ section {
 .cta .cta-btn:hover {
   background: #0b37e7;
   color: white;
-  border: 2px solid white; 
+  border: 2px solid white;
 }
 
 @media (max-width: 1024px) {
@@ -924,7 +933,7 @@ section {
   }
 }
 .col-lg-3:hover {
-  
+
   cursor: pointer;
 }
 
@@ -1473,8 +1482,8 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background:linear-gradient(
-    0deg, #43cea2 , #185a9d 100%);
-  color: #222e85;
+    0deg, #43cea2 , #185a9d 50%);
+  color: #FFF;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1483,7 +1492,7 @@ section {
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
-  color: #222e85;
+  color: #FFF;
   position: relative;
   font-family: "Poppins", sans-serif;
   padding: 0;

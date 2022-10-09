@@ -115,13 +115,16 @@
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
+      $('.mobile-nav-toggle').addClass('toggle-scrolled');
     } else {
       $('#header').removeClass('header-scrolled');
+      $('.mobile-nav-toggle').removeClass('toggle-scrolled');
     }
   });
 
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
+    $('.mobile-nav-toggle').addClass('toggle-scrolled');
   }
 
   // Intro carousel

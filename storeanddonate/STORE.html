@@ -43,6 +43,12 @@
         font-size: medium;
       }
 
+      .card-title{
+        padding: 1rem;
+      }
+
+     
+
       #addNewProduct a {
         border: 2px solid white;
         padding: 4px 7px;
@@ -74,6 +80,50 @@
         color: white;
       }
 
+      .addnewprod-btn{
+        background-color: rgb(0, 70, 141);
+        color:white;
+        border: 0.1rem solid rgba(255, 255, 255, 0);
+        outline: none;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 1rem;
+        float: left;
+      }
+      .addnewprod-btn:hover{
+        background-color: rgba(255, 255, 255, 0);
+        color: #185a9d;
+        border: 0.1rem solid #185a9d;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 1rem;
+        
+      }
+
+      .cardd{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 20rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: white;
+        margin: 2rem;
+      }
+
+      .cardd:hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 20rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 10px 10px 60px -15px rgb(80, 80, 80);
+
+      }
+
       .section-title::after {
         content: "";
         width: 120px;
@@ -84,8 +134,8 @@
       }
 
       .my-cart-btn {
-        color: #1c19dd;
-        border: solid 2px #1c19dd;
+        color: #9b8400;
+        border: solid 2px #9b8400;
         background-color: white;
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
@@ -93,8 +143,8 @@
 
       .my-cart-btn:hover {
         color: white;
-        border: solid 2px #1c19dd;
-        background-color: #1c19dd;
+        border: solid 2px #9b8400;;
+        background-color: #9b8400;
       }
 
       .btn-info {
@@ -114,11 +164,13 @@
       .card:hover {
         box-shadow: 0 0 40px;
       }
+
+
     </style>
   </head>
 
   <body>
-    <center>
+    
       <div class="container">
         <br /><br />
 
@@ -134,23 +186,23 @@
           </div>
         </h1>
 
-        <button type="addNewProduct" id="addNewProduct">
-          <a href="#">ADD NEW PRODUCT</a>
-        </button>
+       <button class="addnewprod-btn">
+          ADD NEW PRODUCT
+       </button>
 
         <br /><br /><br />
 
         <div class="container d-flex flex-wrap justify-content-center">
-          <div class="card m-4 p-2" style="width: 19rem">
+          <div class="cardd">
             <img
               src="../assets/img/img1.jpeg"
               class="card-img-top"
               height="300"
               alt="here comes an image"
             />
-            <div class="card-body d-flex justify-content-between">
+            <div style="display: flex; justify-content:center; align-items: center; gap: 1rem;">
               <h5 class="card-title">PRODUCT 1</h5>
-              <strong>RS 350</strong>
+              <h6>RS 350</h6>
             </div>
             <button
               class="btn my-cart-btn"
@@ -165,16 +217,16 @@
             </button>
             <a href="#" class="btn btn-info">DETAILS</a>
           </div>
-          <div class="card m-4 p-2" style="width: 19rem">
+          <div class="cardd">
             <img
               src="../assets/img/img2.jpeg"
               class="card-img-top"
               height="300"
               alt="here comes an image"
             />
-            <div class="card-body d-flex justify-content-between">
+            <div style="display: flex; justify-content:center; align-items: center; gap: 1rem;">
               <h5 class="card-title">PRODUCT 2</h5>
-              <strong>RS 50</strong>
+              <h6>RS 50</h6>
             </div>
             <button
               class="btn my-cart-btn"
@@ -190,16 +242,16 @@
             <a href="#" class="btn btn-info">DETAILS</a>
           </div>
 
-          <div class="card m-4 p-2" style="width: 19rem">
+          <div class="cardd">
             <img
               src="../assets/img/img3.jpeg"
               class="card-img-top"
               height="300"
               alt="here comes an image"
             />
-            <div class="card-body d-flex justify-content-between">
+            <div style="display: flex; justify-content:center; align-items: center; gap: 1rem;">
               <h5 class="card-title">PRODUCT 3</h5>
-              <strong>RS 450</strong>
+              <h6>RS 450</h6>
             </div>
             <button
               class="btn my-cart-btn"
@@ -215,16 +267,16 @@
             <a href="#" class="btn btn-info">DETAILS</a>
           </div>
 
-          <div class="card m-4 p-2" style="width: 19rem">
+          <div class="cardd">
             <img
               src="../assets/img/img4.jpeg"
               class="card-img-top"
               height="300"
               alt="here comes an image"
             />
-            <div class="card-body d-flex justify-content-between">
+            <div style="display: flex; justify-content:center; align-items: center; gap: 1rem;">
               <h5 class="card-title">PRODUCT 4</h5>
-              <strong>RS 650</strong>
+              <h6>RS 650</h6>
             </div>
             <button
               class="btn my-cart-btn"
@@ -240,16 +292,16 @@
             <a href="#" class="btn btn-info">DETAILS</a>
           </div>
 
-          <div class="card m-4 p-2" style="width: 19rem">
+          <div class="cardd">
             <img
-              src=""
+              src="./b1.jpg"
               class="card-img-top"
               height="300"
               alt="Here comes an image"
             />
-            <div class="card-body d-flex justify-content-between">
+            <div style="display: flex; justify-content:center; align-items: center; gap: 1rem;">
               <h5 class="card-title">PRODUCT 5</h5>
-              <strong>RS 950</strong>
+              <h6>RS 950</h6>
             </div>
             <button
               class="btn my-cart-btn"
@@ -266,7 +318,7 @@
           </div>
         </div>
       </div>
-    </center>
+ 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
     <script src="..//jquery.mycart.js"></script>
