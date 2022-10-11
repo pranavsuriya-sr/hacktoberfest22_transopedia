@@ -1,10 +1,16 @@
+<h1 align="center">Hacktoberfest-Accepted Repository </h1>
+<p align="center">
+    <a href="https://hacktoberfest.com/">
+        <img src="https://user-images.githubusercontent.com/39916680/193060738-1facbd63-c6a3-4f84-9473-f9d7b2ee7f8c.png" width="70%">
+    </a>
+</p>
 
-<!-- <h2 align="center">Transopedia </h2> -->
-# Transopedia
+<h1 align="center">Transopedia </h1>
 
-<h3>Transopedia is a website created to make difference in society as well as in the lifes of transgender community by providing different online and offline support including fund support.</h3>
 
-<h4>[ In development Phase ] 
+<b>Transopedia is a website created to make difference in society as well as in the lifes of transgender community by providing different online and offline support including fund support.</b>
+
+<h3>[ In development Phase ] </h3>
 
 <h2> 
 📌<a href="https://shrutimishra-2002.github.io/Transopedia-website/" target="_blank">Visit our website 🚀</a>
