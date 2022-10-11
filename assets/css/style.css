@@ -882,7 +882,11 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+ 
+}
+ .testimonial-item div:nth-child(2){
+  margin-bottom: 25px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
